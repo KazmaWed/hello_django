@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<div class="container"
+    style="padding-top: 18px; max-width: 1080px;">
+    {% for news in newss %}
+    <div v-for="news in newss"
+        class="col">
+        <div class="card"
+            style="margin-bottom: 18px;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">{{news.headline}}</h5>
+                <p class="card-subtitle mb-2"><small class="text-muted">
+                        {{news.date}}</small></p>
+                <p class="card-text">{{news.body}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{%endblock content%}
