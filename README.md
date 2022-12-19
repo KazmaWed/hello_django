@@ -17,3 +17,5 @@ python3 movie_review_project/manage.py runserver
 ```
 
 3. ブラウザで`http://127.0.0.1:8000/`を表示
+
+![スクショ](movie_review_project/Screenshot.png)
